@@ -11,11 +11,11 @@ data class Asignatura (
     val id: Int = 0,
 
     @ColumnInfo(name = "Asignatura")
-    val Asignatura: String,
+    val nombre: String,
 
     @ColumnInfo(name = "Trimestre")
-    val Trimestre: String,
+    val trimestre: String,
 
     @ColumnInfo(name = "Nota")
-    val Nota: String,
+    val nota: Double,
 )
