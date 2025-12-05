@@ -20,6 +20,7 @@ abstract class AppDatabase : RoomDatabase() {
 
     abstract fun asignaturaDao(): AsignaturaDao
 
+
     companion object {
         // Guardamos aquí la única instancia de la BD (para no crear 20 bases de datos)
         @Volatile
