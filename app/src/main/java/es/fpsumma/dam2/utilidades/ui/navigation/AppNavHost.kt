@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import es.fpsumma.dam2.utilidades.ui.screens.home.HomeScreen
+import es.fpsumma.dam2.utilidades.ui.screens.tareas.ListadoAsignaturasScreen
 import es.fpsumma.dam2.utilidades.ui.screens.tareas.ListadoTareasScreen
 import es.fpsumma.dam2.utilidades.ui.viewmodel.TareasViewModel
 
@@ -13,6 +14,7 @@ fun AppNavHost(navController: NavHostController, tareasViewModel: TareasViewMode
     NavHost(navController = navController, startDestination = Routes.HOME) {
         composable(Routes.HOME) { HomeScreen(navController)}
         composable(Routes.LISTADO_TAREAS) { ListadoTareasScreen(navController,tareasViewModel) }
+        composable (Routes.LISTADO_NOTAS) { ListadoAsignaturasScreen(navController,tareasViewModel) }
 
     }
 }

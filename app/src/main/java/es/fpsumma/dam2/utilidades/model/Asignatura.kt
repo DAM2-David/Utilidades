@@ -10,8 +10,11 @@ data class Asignatura (
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
 
-    @ColumnInfo(name = "Asignatura")
+    @ColumnInfo(name = "Nombre")
     val nombre: String,
+
+    @ColumnInfo(name = "Asignatura")
+    val asignatura: String,
 
     @ColumnInfo(name = "Trimestre")
     val trimestre: String,
