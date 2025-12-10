@@ -22,9 +22,9 @@ class AsignaturasViewModel (application: Application) : AndroidViewModel(applica
             started = SharingStarted.WhileSubscribed(5000),
             initialValue = emptyList()
         )
-    fun addAsignatura(nombre: String, trimestre: String, nota: Double) {
+    fun addAsignatura(nombre: String, tipoAsignatura: String, trimestre: String, nota: Double) {
         viewModelScope.launch {
-            val nueva = Asignatura(nombre = nombre, trimestre = trimestre, nota = nota)
+            val nueva = Asignatura(nombre = nombre, tipoAsignatura = tipoAsignatura, trimestre = trimestre, nota = nota)
             dao.insert(nueva)
         }
     }

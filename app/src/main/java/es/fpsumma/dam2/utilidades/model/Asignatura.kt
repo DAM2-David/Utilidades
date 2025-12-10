@@ -13,8 +13,8 @@ data class Asignatura (
     @ColumnInfo(name = "Nombre")
     val nombre: String,
 
-    @ColumnInfo(name = "Asignatura")
-    val asignatura: String,
+    @ColumnInfo(name = "TipoAsignatura")
+    val tipoAsignatura: String,
 
     @ColumnInfo(name = "Trimestre")
     val trimestre: String,
